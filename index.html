@@ -53,7 +53,7 @@ function updateTotalAmount() {
   const totalDueDiv = document.getElementById('total-due');
   if (participantCount > 0) {
     totalDueDiv.style.display = 'block';
-    totalDueDiv.textContent = `Total Due: $${participantCount * 10}`;
+    totalDueDiv.textContent = `Total Due: $${participantCount * 20}`;
   } else {
     totalDueDiv.style.display = 'none';
   }
@@ -136,7 +136,7 @@ function startPayPal() {
   paypal.Buttons({
     createOrder: function(data, actions) {
       const participantCount = participantBoxes.length;
-      const totalAmount = participantCount * 10;
+      const totalAmount = participantCount * 20;
       return actions.order.create({purchase_units: [{amount: {value: totalAmount.toFixed(2)}}]});
     },
     onApprove: function(data, actions) {
