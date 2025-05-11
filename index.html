@@ -25,7 +25,16 @@
 <form id="form" class="container m-4 pl-4" method="POST">
   <h2 class="title is-4 mt-5">Parent Information</h2>
   <div class="field"><label class="label">Full Name</label><div class="control"><input class="input" type="text" name="Parent Full Name" required></div></div>
-  <div class="field"><label class="label">Email</label><div class="control"><input class="input" type="email" name="Parent Email" required></div></div>
+  <div class="field">
+  <label class="label">Email</label>
+  <div class="control">
+    <input class="input" type="email" name="Parent Email" required>
+  </div>
+  <p class="help has-text-danger">
+    Please use an email address you can access - we'll send confirmation emails 
+    needed for check-in to this address
+  </p>
+</div>
   <div class="field"><label class="label">Phone Number</label><div class="control"><input class="input" type="tel" name="Parent Phone" required></div></div>
 
   <h2 class="title is-4 mt-5">Participant Information</h2>
