@@ -30,11 +30,12 @@
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    .current-date {
-      font-size: 1.2rem;
+    .event-date {
+      font-size: 1.3rem;
       margin-top: -0.5rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       color: #f5f5f5;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -43,13 +44,14 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <h1 class="title is-1">Thank You!</h1>
-        <div id="current-date" class="current-date"></div>
+        <div class="event-date">Event Date: Monday May 26th, 2025</div>
         <h2 class="subtitle is-3 mt-4">Your registration has been successfully submitted.</h2>
         <p class="mt-5 is-size-5">We look forward to seeing you at the Moroccan Youth Athletic Festival!</p>
       </div>
     </div>
   </section>
 
+  <!-- Rest of your existing HTML remains exactly the same -->
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
@@ -167,28 +169,5 @@
   
   <!-- Font Awesome for WhatsApp icon -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
-  <script>
-    // Display current date in the hero section
-    const now = new Date();
-    const options = { 
-      weekday: 'long', 
-      month: 'long', 
-      year: 'numeric' 
-    };
-    
-    // Get day with proper suffix (st, nd, rd, th)
-    let day = now.getDate();
-    let suffix = 'th';
-    if (day % 10 === 1 && day !== 11) suffix = 'st';
-    else if (day % 10 === 2 && day !== 12) suffix = 'nd';
-    else if (day % 10 === 3 && day !== 13) suffix = 'rd';
-    
-    // Format the date string
-    const formattedDate = now.toLocaleDateString('en-US', options)
-      .replace(/(\w+), (\w+) (\d+), (\d+)/, `$1, $2 ${day}${suffix}, $4`);
-    
-    document.getElementById('current-date').textContent = formattedDate;
-  </script>
 </body>
 </html>
