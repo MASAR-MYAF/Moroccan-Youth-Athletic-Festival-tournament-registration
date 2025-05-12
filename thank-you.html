@@ -6,34 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <style>
-    /* Moroccan Flag Styles */
-    .moroccan-flag {
-      width: 120px;
-      height: 80px;
-      background-color: #C1272D;
-      position: relative;
-      margin: 0 auto;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    .moroccan-flag::before {
-      content: "★";
-      position: absolute;
-      color: #006233;
-      font-size: 36px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .flag-wave {
-      animation: wave 3s infinite;
-    }
-    @keyframes wave {
-      0%, 100% { transform: rotate(0deg); }
-      25% { transform: rotate(-5deg); }
-      75% { transform: rotate(5deg); }
-    }
-    
-    /* Timeline Styles */
     .timeline {
       border-left: 3px solid #00d1b2;
       padding-left: 1.5rem;
@@ -54,61 +26,31 @@
       background: #00d1b2;
       border: 2px solid white;
     }
-    
-    /* Card Styles */
     .info-card {
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    
-    /* Hero Enhancements */
-    .hero-title {
-      position: relative;
-    }
-    .hero-title::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 4px;
-      background: #fff;
-      margin: 10px auto;
-    }
   </style>
 </head>
 <body>
-  <!-- Hero Section with Moroccan Flag -->
   <section class="hero is-primary is-bold">
     <div class="hero-body">
       <div class="container has-text-centered">
-        <div class="moroccan-flag flag-wave"></div>
-        <h1 class="title is-1 hero-title">Thank You!</h1>
-        <h2 class="subtitle is-3 mt-4">
-          Your registration for the <span class="has-text-warning">Moroccan Youth Athletic Festival</span> has been confirmed
-        </h2>
-        <p class="mt-5 is-size-5">
-          May 26, 2025 • Justice High School
-        </p>
+        <h1 class="title is-1">Thank You!</h1>
+        <h2 class="subtitle is-3 mt-4">Your registration has been successfully submitted.</h2>
+        <p class="mt-5 is-size-5">We look forward to seeing you at the Moroccan Youth Athletic Festival!</p>
       </div>
     </div>
   </section>
 
-  <!-- Event Details Section -->
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="box info-card">
-            <h2 class="title is-3 has-text-centered mb-6">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-calendar-alt"></i>
-                </span>
-                <span>Event Details</span>
-              </span>
-            </h2>
+            <h2 class="title is-3 has-text-centered mb-6">Event Details</h2>
             
             <div class="columns">
-              <!-- Schedule Column -->
               <div class="column">
                 <h3 class="title is-4">📅 Schedule</h3>
                 <div class="timeline">
@@ -146,7 +88,6 @@
                 </div>
               </div>
               
-              <!-- Location Column -->
               <div class="column">
                 <h3 class="title is-4">📍 Location</h3>
                 <div class="notification is-info-light">
@@ -158,10 +99,7 @@
                     <a href="https://maps.google.com/?q=3301+Peace+Valley+Ln,+Falls+Church,+VA+22044" 
                        class="button is-info is-fullwidth" 
                        target="_blank">
-                      <span class="icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                      </span>
-                      <span>Get Directions</span>
+                      Get Directions
                     </a>
                   </div>
                 </div>
@@ -170,29 +108,17 @@
                 <div class="content">
                   <ul>
                     <li>Sports equipment (cleats, shin guards)</li>
-                    <li>Water bottle (refill stations available)</li>
+                    <li>Water bottle</li>
                     <li>Prayer mat (if needed)</li>
                     <li>Sun protection (hat, sunscreen)</li>
-                    <li>Printed confirmation (or digital copy)</li>
                   </ul>
                 </div>
               </div>
             </div>
             
-            <!-- Weather Policy -->
             <div class="notification is-warning mt-5">
-              <h4 class="title is-5">☔ Weather Policy</h4>
-              <p>The event will proceed in light rain. In case of severe weather:</p>
-              <ul>
-                <li>Check WhatsApp group for real-time updates</li>
-                <li>Notifications will be sent by 7:00 AM if postponed</li>
-                <li>Rain date: June 2, 2025</li>
-              </ul>
-            </div>
-            
-            <!-- Moroccan Flag Divider -->
-            <div class="has-text-centered mt-6">
-              <div class="moroccan-flag" style="width:80px;height:60px;display:inline-block;"></div>
+              <p class="has-text-weight-bold">☔ Weather Policy:</p>
+              <p>The event will proceed in light rain. In case of severe weather, please check your WhatsApp group for real-time updates.</p>
             </div>
           </div>
         </div>
@@ -200,11 +126,10 @@
     </div>
   </section>
 
-  <!-- WhatsApp Section -->
   <section class="section has-background-light">
     <div class="container has-text-centered">
       <h2 class="title is-3">Stay Updated!</h2>
-      <p class="subtitle is-5">Join our official WhatsApp Group for announcements</p>
+      <p class="subtitle is-5">Join our event WhatsApp Group for announcements and updates</p>
       
       <div class="columns is-centered">
         <div class="column is-4">
@@ -228,13 +153,13 @@
       </div>
       
       <div class="mt-6">
-        <div class="moroccan-flag" style="width:60px;height:40px;display:inline-block;margin-bottom:1rem;"></div>
         <p class="has-text-grey mt-3">MYAF - Moroccan Youth Athletic Festival</p>
       </div>
     </div>
   </section>
   
-  <!-- Font Awesome Icons -->
+  <!-- Font Awesome for WhatsApp icon -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
 </body>
 </html>
